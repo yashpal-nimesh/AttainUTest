@@ -1,0 +1,39 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <link href="signin.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="container">
+          <form class="form-signin" action="/" method="POST">
+            <input type="text" name="name"id="inputName" class="form-control" placeholder="Enter Name" required autofocus>
+            <textarea name="tweet"id="inputTweet" class="form-control" placeholder="Enter tweet" required></textarea>
+            <input class="btn btn-lg btn-primary btn-block" type="Submit">
+          </form>
+        </div>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <!-- <script>
+  $.ajax({
+url:'/ShowTweets',
+method:'get',
+dataType:'json',
+success:function(data){
+  $('body').prepend('<ul class="list-group"></ul>');
+  for(var i=0;i<data.length;i++){
+    $('ul').append('<li class="list-group-item">'+data[i].name+': '+data[i].tweet+'</li>');
+  }
+
+}
+  })
+
+  </script> -->
+
+
+
+  </body>
+</html>
